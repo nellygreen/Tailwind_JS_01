@@ -35,7 +35,6 @@ const scrollHeader = () => {
 
     if(this.scrollY >=50) {
         header.classList.add("border-b", "border-orange-400")
-        scrollUpBtn.classList.add("-bottom-1/2")
     } else {
         header.classList.remove("border-b", "border-orange-400")
     }
