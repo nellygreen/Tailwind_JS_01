@@ -1,4 +1,3 @@
-import './style.css'
 
 /* TOGGLE BUTTON */
 const navMenu = document.getElementById("nav-menu")

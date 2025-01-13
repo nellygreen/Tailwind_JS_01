@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {    
-    "csscompile": "tailwindcss -i ./style.css -o ./src/style.css --watch"
+    "csscompile": "tailwindcss -i ./input.css -o ./output.css --watch"
   }, 
   "devDependencies": {    
     "tailwindcss": "^3.4.17"    
