@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- INCLUDE CSS-->
+    <link href="./src/style.css" rel="stylesheet">
+
+    <!--SWIPER-SLIDER-CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+     <!-- FONTS ARE IMPORTED IN ./style.css -->
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="src/assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- REMIX ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Tailwind Vue UI</title>
+
+  </head><!--/head-->
+
+  <body>  
+    <!--HEADER-START-->    
+    <header id="navbar" class="bg-blue-900 fixed w-full top-0 left-0 z-50">
+      <!--navbar-start-->
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <!--logo-start-->
+        <div class="font-Lobster sm:text-2xl">
+          HOME GOODS STORE
+        </div><!--/logo-->
+        <!--nav-links-start-->
+        <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-blue-950/80 background-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">        
+            <ul class="flex flex-col items-center gap-8 lg:flex-row">
+              <li>
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="#popular" class="nav-link">Popular</a>
+              </li>
+              <li>
+                <a href="#review" class="nav-link">Review</a>
+              </li>
+            </ul>
+            <div class="absolute right-3 -top-5 opacity-90">
+              <img src="src/assets/img/icon_01.png" alt="teapot_image" class="w-32">
+            </div>
+            <div class="absolute -left-0 -top-5 opacity-90">
+              <img src="src/assets/img/icon_01.png" alt="teapot_image" class="w-32">
+            </div>
+        </div><!--/nav-links-->
+        <!--mobile-menu-start-->        
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i class="ri-menu-4-line" id="hamburger"></i>
+        </div><!--/mobile-menu-->
+      </nav><!--/nav-->      
+    </header>
+    <!--HEADER-END-->
+
+    <!--MAIN-CONTENT-START--> 
+    <main>
+      <!--HOME-SECTION-START-->
+        <section id="home" class="relative">
+          <div class="container">
+            <!-- blob 1 -->
+            <div class="w-64 h-64 bg-blue-900 rounder-full blur-3xl -z-10 opacity-40 absolute -bottom-1 left-0"></div>
+            <!-- blob 2 -->
+            <div class="w-64 h-64 bg-blue-900 rounder-full blur-3xl -z-10 opacity-40 absolute -bottom-1 right-0"></div>
+            <div class="flex flex-col items-center gap-5 lg:flex-row">
+              <!-- content -->
+              <div class="w-full space-y-5 lg:w-1/2">
+                <h1>
+                  <span class="text-orange-400">HOMEMAKING </span>IS BORING...<br> 
+                  <span class="text-orange-400">OR NOT ???</span><br>YOUR CHOICE!
+                </h1>
+                <p class="text-slate-300 font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Animi earum repellendus tempora. Tempore, vel. 
+                  Vitae ad iste impedit a blanditiis.
+                </p>
+                <div class="flex flex-col gap-2 sm:flex-row">
+                  <button class="btn">
+                    <span>SHOP NOW</span>
+                    <i class="ri-leaf-line"></i>
+                  </button>
+                  <button class="btn btn_outline">
+                    <span>LEARN MORE</span>
+                    <i class="ri-leaf-line"></i>
+                  </button>
+                </div>
+                <p class="text-xs font-Lobster text-slate-300">Don't forget to ask for your 30-days free trial !!!</p>
+                <!-- social incons -->                
+                <div>
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-x-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div><!--/social-icons-->               
+              </div><!--/content-->
+              <!--feature-img-->
+              <div class="w-full relative">                
+                <img src="src/assets/img/item_10.png" alt="item">
+                <!-- icons -->
+                <div class="absolute -top-2 right-0 opacity-30 animate-movingY">
+                  <i class="ri-plant-line text-6xl text-orange-400"></i>
+                </div>                
+                <div class="absolute bottom-0 left-0 opacity-30 animate-scalingUp">
+                  <i class="ri-home-heart-line text-6xl text-orange-400"></i>
+                </div>
+                <!--
+                <div class="absolute -top-3 -left-5 opacity-30 animate-movingY">
+                  <i class="ri-home-heart-line text-6xl text-orange-400"></i>
+                </div>
+                -->        
+                
+              </div><!--/feature-img-->
+            </div><!--flexbox-->
+          </div><!--/container-->       
+       </section> 
+       <!--HOME-SECTION-END-->
+
+        <!--SERVICES-SECTION-START-->
+        <div class="bg-white text-blue-900 py-20">
+          <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- card1 -->
+            <div class="border border-blue-900 p-5 cursor-pointer rounder-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+              <div class="flex items-center gap-5">
+                <i class="ri-truck-line text-3xl md:text-4x1 xl:text-5xl"></i>
+                <p class="md:text-lg font-bold">FAST DELIVERY</p>
+              </div>
+              <p class="font-Lobster">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ex, ea atque quo porro error explicabo velit amet commodi!
+              </p>
+            </div><!--/card1-->
+             <!-- card2 -->
+            <div class="border border-blue-900 p-5 cursor-pointer rounder-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+              <div class="flex items-center gap-5">
+                <i class="ri-customer-service-line text-3xl md:text-4x1 xl:text-5xl"></i>
+                <p class="md:text-lg font-bold">GREAT SERVICE</p>
+              </div>
+              <p class="font-Lobster">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ex, ea atque quo porro error explicabo velit amet commodi!
+              </p>
+            </div><!--/card2-->
+             <!-- card3 -->
+            <div class="border border-blue-900 p-5 cursor-pointer rounder-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+              <div class="flex items-center gap-5">
+                <i class="ri-plant-line text-3xl md:text-4xl xl:text-5x1"></i>
+                <p class="md:text-lg font-bold">NATURE FRIENDLY</p>
+              </div>
+              <p class="font-Lobster">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ex, ea atque quo porro error explicabo velit amet commodi!
+              </p>
+            </div><!--/card3-->
+             <!--card4-->
+            <div class="border border-blue-900 p-5 cursor-pointer rounder-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+              <div class="flex items-center gap-5">
+                <i class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
+                <p class="md:text-lg font-bold">HONEST PRICING</p>
+              </div>
+              <p class="font-Lobster">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ex, ea atque quo porro error explicabo velit amet commodi!
+              </p>
+            </div><!--/card4-->
+          </div><!--/container-->
+        </div>
+        <!--SERVICES-SECTION-END-->
+
+        <!--ABOUT-SECTION-START-->
+         <section id="about" class="relative overflow-hidden">
+
+          <!--about-intro-->
+          <div class="absolute bottom-0 -left-12 rotate-90 opacity-40">
+            <img src="src/assets/img/icon_04.png" alt="" class="w-40 md:w-52 xl:w-64">
+          </div>
+          <div class="absolute -top-8 -right-12 -rotate-90 opacity-40">
+            <img src="src/assets/img/icon_04.png" alt="" class="w-40 md:w-52 xl:w-64">
+          </div>
+          <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+            <h2 class="title">About Us</h2>
+            <p class="max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <!--/about-intro-->
+          <div class="container space-y-10 xl:space-y-0">
+            <!--item-1-->
+            <div class="flex flex-col items-center lg:flex-row gap-5">
+              <!--img-->
+              <div class="w-full lg:w-1/2">
+                <img src="src/assets/img/icon_03.png" alt="about_img" class="sm:w-2/3 lg:w-1/2 xl:w-1/2 mx-auto">
+              </div>              
+              <div class="w-full lg:w-1/2">
+                <div class="space-y-5">
+                  <h3>MAKE YOUR SPACE<br><span class="text-orange-400">PERFECTLY YOURS!</span></h3>
+                  <p class="text-slate-300 font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam cumque recusandae praesentium esse corrupti expedita est aspernatur ducimus, exercitationem, molestias qui soluta laudantium sit porro fugit magnam. Quas, corporis.</p>
+                </div>
+              </div>
+            </div><!--/item1-->
+            <!--item-2-->
+            <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+              <!--img-->
+              <div class="w-full lg:w-1/2">
+                <img src="src/assets/img/icon_02.png" alt="about_img" class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
+              </div><!--/img-->              
+              <div class="w-full lg:w-1/2">
+                <div class="space-y-5">
+                  <h3><span class="text-orange-400">LET'S GROW<br></span>TOGETHER!!!</h3>
+                  <p class="text-slate-300 font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam cumque recusandae praesentium esse corrupti expedita est aspernatur ducimus, exercitationem, molestias qui soluta laudantium sit porro fugit magnam. Quas, corporis.</p>
+                </div>
+              </div>
+            </div><!--/item2-->
+          </div><!--/container-->
+         </section>
+        <!--ABOUT-SECTION-END-->
+
+        <!--POPULAR-SECTION-START-->
+        <section id="popular" class="bg-blue-900">
+          <!--heading-flexbox-->
+          <div class="flex flex-col items-center gap-3 text-center mb-40">
+            <!--heading-text-->
+            <h2 class="title">Yor home, your choice!</h2>
+            <p class="max-w-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <!--/heading-text-->
+          </div>
+          <!--/heading-flexbox-->
+          <div class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <!--card1-->
+            <div class="popular__card bg-blue-950 p-10 pt-24 rounded-md relative">
+              <!--img-->
+              <img src="src/assets/img/item_18.png" alt="popilar_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+              <!--description-->
+              <p class="italic">Lorem ipsum dolor sit</p>
+              <h3>Best Price</h3>
+              <!--star-rating-->
+              <div class="text-orange-400 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+              </div>
+              <!--buttons-->
+              <div class="flex items-center justify-between">              
+                <!--price-->
+                <p class="xl">$50</p>
+                <!--cartbutton-->
+                <button class="bg-orange-400 px-2 py-1 rounded-sm">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!--/card1-->
+            <!--card2-->
+            <div class="popular__card bg-blue-950 p-10 pt-24 rounded-md relative">
+              <!--img-->
+              <img src="src/assets/img/item_19.png" alt="popilar_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+              <!--description-->
+              <p class="italic">Lorem ipsum dolor sit</p>
+              <h3>People's Choice</h3>
+              <!--star-rating-->
+              <div class="text-orange-400 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+              </div>
+              <!--buttons-->
+              <div class="flex items-center justify-between">              
+                <!--price-->
+                <p class="xl">$50</p>
+                <!--cartbutton-->
+                <button class="bg-orange-400 px-2 py-1 rounded-sm">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!--/card2-->
+            <!--card3-->
+            <div class="popular__card bg-blue-950 p-10 pt-24 rounded-md relative">
+              <!--img-->
+              <img src="src/assets/img/item_15.png" alt="popilar_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+              <!--description-->
+              <p class="italic">Lorem ipsum dolor sit</p>
+              <h3>On Sale</h3>
+              <!--star-rating-->
+              <div class="text-orange-400 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+              </div>
+              <!--buttons-->
+              <div class="flex items-center justify-between">              
+                <!--price-->
+                <p class="xl">$50</p>
+                <!--cartbutton-->
+                <button class="bg-orange-400 px-2 py-1 rounded-sm">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!--/card3-->
+            <!--card4-->
+            <div class="popular__card bg-blue-950 p-10 pt-24 rounded-md relative">
+              <!--img-->
+              <img src="src/assets/img/item_13.png" alt="popilar_image" class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500">
+              <!--description-->
+              <p class="italic">Lorem ipsum dolor sit</p>
+              <h3>Most Popular</h3>
+              <!--star-rating-->
+              <div class="text-orange-400 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+                <i class="ri-star-fill text-gray-400"></i>
+              </div>
+              <!--buttons-->
+              <div class="flex items-center justify-between">              
+                <!--price-->
+                <p class="xl">$50</p>
+                <!--cartbutton-->
+                <button class="bg-orange-400 px-2 py-1 rounded-sm">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!--/card4-->
+          </div>
+          <!--/container-->
+        </section>
+        <!--POPULAR-SECTION-END-->
+
+        <!--REVIEW-SECTION-START-->
+        <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
+
+          <!--img-decor-->
+          <!--
+          <div class="absolute opacity-20 -top-0">
+            <img src="src/assets/img/icon_05.png" alt="decor_img" class="w-fit  -translate-y-1 -translate-x-10">
+          </div>-->
+          <!--/img-decor-->
+          
+          <!--flexbox-->
+          <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+            <h2 class="title">Customer Review</h2>
+            <p class="max-w-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+          <!--/flexbox-->
+
+          <!--review1-->
+          <!--container-->
+          <div class="container">
+            <!--swiper-slider-->
+            <div class="swiper py-12">
+              <!--swiper-wrapper-->
+              <ul class="swiper-wrapper">
+
+                <!--swiper-slide1-->
+                <li class="swiper-slide">
+                  <!--flexbox-->
+                  <div class="flex flex-col gap-5 bg-blue-900 rounded-md p-6">
+                    <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia velit, fugiat magnam, perspiciatis inventore quisquam unde 
+                      officiis consectetur cumque dolor blanditiis minima, assumenda alias accusantium.</p>
+                    <div class="flex items-center">
+                      <img src="src/assets/img/person_01.png" alt="person1" class="w-12 h-14 rounded-full">
+                      <div class="ml-2">
+                        <p class="text-orange-400 uppercase">John Doe</p>
+                        <p>Designer</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                  <!--/flexbox-->
+                </li>
+                <!--swiper-slide1-->              
+            
+                <!--swiper-slide2-->
+                <li class="swiper-slide">
+                <!--flexbox-->
+                  <div class="flex flex-col gap-5 bg-blue-900 rounded-md p-6">
+                      <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia velit, fugiat magnam, perspiciatis inventore quisquam unde 
+                        officiis consectetur cumque dolor blanditiis minima, assumenda alias accusantium.</p>
+                      <div class="flex items-center">
+                        <img src="src/assets/img/person_08.png" alt="person1" class="w-12 h-14 rounded-full">
+                        <div class="ml-2">
+                          <p class="text-orange-400 uppercase">Jane Doe</p>
+                          <p>Accountant</p>
+                        </div>
+                        <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                      </div>
+                  </div>
+                  <!--/flexbox-->
+                </li>
+                <!--swiper-slide2--> 
+
+                <!--swiper-slide3-->
+                <li class="swiper-slide">
+                  <!--flexbox-->
+                  <div class="flex flex-col gap-5 bg-blue-900 rounded-md p-6">
+                    <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia velit, fugiat magnam, perspiciatis inventore quisquam unde 
+                      officiis consectetur cumque dolor blanditiis minima, assumenda alias accusantium.</p>
+                    <div class="flex items-center">
+                      <img src="src/assets/img/person_03.png" alt="person1" class="w-12 h-16 rounded-full">
+                      <div class="ml-2">
+                        <p class="text-orange-400 uppercase">James Doe</p>
+                        <p>Sales Manager</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                  <!--/flexbox-->
+                </li>
+                <!--swiper-slide3-->             
+            
+                <!--swiper-slide4-->
+                <li class="swiper-slide">
+                  <!--flexbox-->
+                  <div class="flex flex-col gap-5 bg-blue-900 rounded-md p-6">
+                    <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia velit, fugiat magnam, perspiciatis inventore quisquam unde 
+                      officiis consectetur cumque dolor blanditiis minima, assumenda alias accusantium.</p>
+                    <div class="flex items-center">
+                      <img src="src/assets/img/person_02.png" alt="person1" class="w-12 h-14 rounded-full">
+                      <div class="ml-2">
+                        <p class="text-orange-400 uppercase">Jeanine Doe</p>
+                        <p>Web Deviloper</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                  <!--/flexbox-->
+                </li>
+                <!--swiper-slide4-->              
+            
+                <!--swiper-slide5-->
+                <li class="swiper-slide">
+                  <!--flexbox-->
+                  <div class="flex flex-col gap-5 bg-blue-900 rounded-md p-6">
+                    <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia velit, fugiat magnam, perspiciatis inventore quisquam unde 
+                      officiis consectetur cumque dolor blanditiis minima, assumenda alias accusantium.</p>
+                    <div class="flex items-center">
+                      <img src="src/assets/img/person_06.png" alt="person1" class="w-12 h-14 rounded-full">
+                      <div class="ml-2">
+                        <p class="text-orange-400 uppercase">Jeremy Doe</p>
+                        <p>CEO</p>
+                      </div>
+                      <i class="ri-double-quotes-r text-4xl ml-auto"></i>
+                    </div>
+                  </div>
+                  <!--/flexbox-->
+                </li>
+                <!--swiper-slide5-->
+
+              </ul>
+              <!--swiper-wrapper-->
+              <!--swiper-pagination-->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!--/swiper-->
+          </div>
+          <!--/container-->
+          <!--/review1-->
+
+        </section>
+        <!--REVIEW-SECTION-END-->
+
+
+    </main>
+
+    <!--FOOTER-START-->  
+    <footer class="bg-orange-100 text-blue-950 pt-20 pb-10 md:pt-28 relative">
+      <!--newsletter-->
+      <div class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
+        <div class="bg-blue-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
+          <h3><span class="text-orange-400">Subscribe</span> to our newsletter</h3>
+
+          <div class="flex flex-col md:flex-row gap-1">
+            <input type="email" placeholder="Your Email Address" class="w-full px-5 py-3 text-blue-900 rounded-md outline-none"> 
+            <button class="flex items-center justify-center gap-1 bg-blue-950 px-5 py-3 rounded-md hover:opacity-80 duration-300">
+              <span>Subscribe</span>
+              <i class="ri-send-plane-2-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--/newsletter-->
+      <!--social-icon-->
+      <div class="container mt-16 mb-10">
+        <div class="border-b border-blue-500 relative">
+          <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+            <div class="bg-orange-100 text-lg text-center space-x-2">
+              <i class="ri-facebook-fill hover:text-orange-400 duration-300 cursor-pointer"></i>
+              <i class="ri-twitter-x-line hover:text-orange-400 duration-300 cursor-pointer text-base"></i>
+              <i class="ri-instagram-line hover:text-orange-400 duration-300 cursor-pointer"></i>
+              <i class="ri-linkedin-fill hover:text-orange-400 duration-300 cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/social-icon-->
+      <!--footer-content-->
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center">
+        <!--item1-->
+        <div>
+          <div class="text-7xl text-blue-950 text-center inline-block">
+            <i class="ri-sofa-fill"></i>
+            <p class="font-Lobster text-xl sm:text-2xl">Home Goods Store</p>
+          </div>
+        </div>
+        <!--/item1-->
+        <!--item2-->
+        <div>
+          <p class="mb font-bold text-xl">Quick Link</p>
+          <div class="flex flex-col gap-1">
+            <a href="#">Furniture</a>
+            <a href="#">Decoration</a>
+            <a href="#">Curtains</a>
+            <a href="#">Planning</a>
+            <a href="#">Shipping</a>
+          </div>
+        </div>
+        <!--/item2-->
+        <!--item3-->
+        <div>
+          <p class="mb font-bold text-xl">Popular Services</p>
+          <div class="flex flex-col gap-1">
+            <a href="#">Furniture Moving</a>
+            <a href="#">Interior Design</a>
+            <a href="#">Home Planning</a>
+            <a href="#">Gardenning Advice</a>
+          </div>
+        </div>
+        <!--/item3-->
+        <!--item4-->
+        <div>
+          <p class="mb font-bold text-xl">Contact Us</p>
+          <div class="flex flex-col gap-1">
+            <a href="tel:+49 333 33 333">+49 333 33 333</a>
+            <a href="mailto:homegoodsstore@gmail.com">homegoodsstore@gmail.com</a>
+            <br>
+            <p>1234 Kenny Ave, Sout Park, USA</p>
+          </div>
+        </div>
+        <!--/item4-->
+      </div>
+
+      <!--copyright-->
+      <div class="container">
+        <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 Home Goods Store. All rights reserved</p>
+      </div>
+      <!--/copyright-->
+
+      <!--footer-image-->
+      <div class="absolute -bottom-5 -right-5 transform translate-x-1/2 opacity-10 pointer-events-none">
+        <img src="src/assets/img/icon_06.png" alt="footer_image" class="w-1/2">
+      </div>
+      <!--/footer-image--> 
+      <!--/footer-content-->
+    </footer>
+    <!--FOOTER-END-->
+
+    <!--scrollup-->
+    <a href="#" id="scroll-up" class="fixed hidden right-4 bottom-5 bg-orange-400 shadow-sm px-3 py-1 md:px-4 md:py-2 rouded-md text-lg z-50 hover:-translate-y-1 duration-300">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+      
+    <!--/scrollup-->
+    <script type="module" src="./src/main.js"></script> 
+
+    <!--SWIPER-SLIDER-JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+    <!-- MAIN.JS -->    
+    
+  </body>
+</html>
