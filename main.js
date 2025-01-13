@@ -106,12 +106,14 @@ const swiper = new Swiper('.swiper', {
     reset: true
   })
 
-  sr.reveal(`.home__data, .about__top, .popular__top`)
-  sr.reveal(`.home__image`, {delay: 500, scale: 0.8})
+  sr.reveal(`.home__data, .about__top, .popular__top, .review__top, .review__swiper, .footer__icon, .footer__content, .copy__right .footer__img`)
+  sr.reveal(`.home__image`, {delay: 1000, scale: 0.6})
 
-  sr.reveal(`.service__card`, {interval: 200})
+  sr.reveal(`.service__card, .popular__card`, {interval: 200})
 
   sr.reveal(`.about__deco`, {delay: 100})
   sr.reveal(`.about__item__1-content, .about__item__2-img`, {origin: "right"})
   sr.reveal(`.about__item__2-content, .about__item__1-img`, {origin: "left"})
+
+
 
