@@ -37,6 +37,11 @@ h3 {
     @apply text-orange-400;
 }
 
+/* active link */
+.active {
+    @apply text-orange-400;
+}
+
 .title {
     @apply font-Lobster text-orange-400;
 }

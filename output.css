@@ -665,10 +665,6 @@ video {
   bottom: -0.25rem;
 }
 
-.-bottom-1\/2{
-  bottom: -50%;
-}
-
 .-bottom-5{
   bottom: -1.25rem;
 }
@@ -3053,6 +3049,13 @@ h3{
 }
 
 .nav-link:hover{
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity, 1));
+}
+
+/* active link */
+
+.active{
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity, 1));
 }
