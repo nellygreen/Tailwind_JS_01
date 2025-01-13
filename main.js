@@ -96,3 +96,22 @@ const swiper = new Swiper('.swiper', {
   }
 
   window.addEventListener("scroll", activeLink)
+
+  /* SCROLL REVEAL */
+  const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 300,
+    reset: true
+  })
+
+  sr.reveal(`.home__data, .about__top, .popular__top`)
+  sr.reveal(`.home__image`, {delay: 500, scale: 0.8})
+
+  sr.reveal(`.service__card`, {interval: 200})
+
+  sr.reveal(`.about__deco`, {delay: 100})
+  sr.reveal(`.about__item__1-content, .about__item__2-img`, {origin: "right"})
+  sr.reveal(`.about__item__2-content, .about__item__1-img`, {origin: "left"})
+
