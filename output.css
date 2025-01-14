@@ -3189,6 +3189,10 @@ h3{
 }
 
 @media (min-width: 340px){
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:h-20{
     height: 5rem;
   }
@@ -3223,6 +3227,10 @@ h3{
 
   .md\:mb-28{
     margin-bottom: 7rem;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:w-52{
